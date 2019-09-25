@@ -1,0 +1,5 @@
+<app-store-display-borders [variable]="var1"></app-store-display-borders>
+<app-store-display-borders [variable]="var2"></app-store-display-borders><br>
+<button (click)="onAppStart()" *ngIf="!interval || interval?.closed">Start</button>
+<button (click)="onAppStop()" *ngIf="interval && !interval?.closed">Stop</button>
+<button (click)="onAppReset()">Reset</button>

@@ -1,12 +1,20 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { StoreDisplayComponent } from './store-display/store-display.component';
+import { StoreDisplayBordersComponent } from './store-display/store-display-borders/store-display-borders.component';
+import { StoreModule } from '@ngrx/store';
+import { StoreTestReducer } from './store/reducer';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        StoreDisplayComponent,
+        StoreDisplayBordersComponent
       ],
+      imports: [StoreModule.forRoot({ storeTest: StoreTestReducer })]
     }).compileComponents();
   }));
 
@@ -14,18 +22,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'store-test'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('store-test');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('store-test app is running!');
   });
 });

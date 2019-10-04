@@ -2,8 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StoreDisplayComponent } from './store-display.component';
 import { StoreDisplayBordersComponent } from './store-display-borders/store-display-borders.component';
-import { Store, StoreModule } from '@ngrx/store';
-import { AppState, StoreTestReducer } from '../store/reducer';
+import { StoreModule } from '@ngrx/store';
+import { StoreTestReducer } from '../store/reducer';
 
 describe('StoreDisplayComponent', () => {
   let component: StoreDisplayComponent;

@@ -1,7 +1,21 @@
 # StoreTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
+Creates a store with 2 variables in state.
+Initial state of them is -5 and 10 respectively.
+Store have 3 actions:\
+"change" action does nothing in a reducer.\
+"increase" action should increase first variable by 1.\
+"decrease" action should decrease second variable by 1.\
 
+First component is responsible to display what it gets in an input property. It should display input always in a border. If value is lower than 0 its border and value should be some red. If greater then some blue.\
+Second component renders variables from store by first component.
+
+![Initial State](./src/assets/InitialState.png?raw=true "Initial State")
+Initial State\
+![App Started](./src/assets/App started.png?raw=true "App Started")\
+App Started\
+![Stop pressed](./src/assets/Stop pressed.png?raw=true "App stopped")\
+App stopped
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

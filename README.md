@@ -10,11 +10,11 @@ Store have 3 actions:\
 First component is responsible to display what it gets in an input property. It should display input always in a border. If value is lower than 0 its border and value should be some red. If greater then some blue.\
 Second component renders variables from store by first component.
 
-![Initial State](./src/assets/InitialState.png?raw=true "Initial State")
+![Initial State](./src/assets/InitialState.png?raw=true "Initial State")\
 Initial State\
-![App Started](./src/assets/App started.png?raw=true "App Started")\
+![App Started](src/assets/AppStarted.png?raw=true "App Started")\
 App Started\
-![Stop pressed](./src/assets/Stop pressed.png?raw=true "App stopped")\
+![Stop pressed](src/assets/StopPressed.png?raw=true "App stopped")\
 App stopped
 ## Development server
 
